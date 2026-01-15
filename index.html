@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, world</h1>
-  <p>This is my GitHub Pages site.</p>
+  <header class="container">
+    <nav class="nav">
+      <div class="brand">Your Name</div>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Cybersecurity / Software / Whatever You Do</h1>
+      <p class="subtitle">
+        Short 1–2 sentence pitch about what you do and what you’re seeking.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="https://github.com/YOURUSERNAME" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/YOURPROFILE" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project Title 1</h3>
+          <p>1–2 lines: what it does, what tools you used, why it matters.</p>
+          <div class="tags">
+            <span>Python</span><span>Linux</span><span>Security</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/YOURUSERNAME/REPO1" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Title 2</h3>
+          <p>1–2 lines: result, impact, or what you learned.</p>
+          <div class="tags">
+            <span>C++</span><span>Networking</span><span>Docker</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/YOURUSERNAME/REPO2" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Write-up</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Title 3</h3>
+          <p>Keep it skimmable. Hiring managers scan.</p>
+          <div class="tags">
+            <span>SQL</span><span>Cloud</span><span>API</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/YOURUSERNAME/REPO3" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Notes</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="pill-row">
+        <span class="pill">Linux</span>
+        <span class="pill">Python</span>
+        <span class="pill">C/C++</span>
+        <span class="pill">Networking</span>
+        <span class="pill">Nmap</span>
+        <span class="pill">Wireshark</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Git</span>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        4–6 lines about you: what you’re studying/doing, what you like building,
+        and what roles you want. Add 1 specific line about what you’re best at.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:you@email.com">you@email.com</a><br/>
+        Resume: <a href="resume.pdf" target="_blank" rel="noreferrer">resume.pdf</a>
+      </p>
+      <p class="small">
+        Tip: you can upload a PDF named <code>resume.pdf</code> into the repo and this link will work.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container small">
+      © <span id="year"></span> Your Name • Built on GitHub Pages
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
